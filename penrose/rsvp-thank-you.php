@@ -13,14 +13,12 @@ Template Name: RSVP Thank You
 	<section class="misc">
 		<div class="row">
 			<div class="columns">
-				<h1 class="green-header">Thank you!</h1>
+				<h1 class="green-header"><?php the_title(); ?></h1>
 			</div>
 		</div>	
 		<div class="row">
 			<div class="large-12 columns">
-				<p>Thank your RSVPing. 
-					Follow us on <a href="https://www.facebook.com/penroseacademy">Facebook</a>, <a href="https://instagram.com/penroseacademy/">Instagram</a> 
-				and <a href="https://twitter.com/PenroseAcademy">Twitter</a>.</p>
+				<?php the_content(); ?>
 			</div>	
 		</div>				
 	</section>	
