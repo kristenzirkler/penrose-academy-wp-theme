@@ -1,0 +1,19 @@
+/************* TYPOGRAPHY ****************/
+@font-face {
+  font-family: 'endurance_w01_lightregular';
+  src: url("webfonts/endurancelight-webfont.eot");
+  src: url("webfonts/endurancelight-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/endurancelight-webfont.woff2") format("woff2"), url("webfonts/endurancelight-webfont.woff") format("woff"), url("webfonts/endurancelight-webfont.ttf") format("truetype"), url("webfonts/endurancelight-webfont.svg#endurance_w01_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'endurance_w01_regularregular';
+  src: url("webfonts/enduranceregular-webfont.eot");
+  src: url("webfonts/enduranceregular-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/enduranceregular-webfont.woff2") format("woff2"), url("webfonts/enduranceregular-webfont.woff") format("woff"), url("webfonts/enduranceregular-webfont.ttf") format("truetype"), url("webfonts/enduranceregular-webfont.svg#endurance_w01_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'endurance_w01_boldregular';
+  src: url("webfonts/endurancebold-webfont.eot");
+  src: url("webfonts/endurancebold-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/endurancebold-webfont.woff2") format("woff2"), url("webfonts/endurancebold-webfont.woff") format("woff"), url("webfonts/endurancebold-webfont.ttf") format("truetype"), url("webfonts/endurancebold-webfont.svg#endurance_w01_boldregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
