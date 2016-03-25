@@ -1,0 +1,666 @@
+
+/***********************
+     PROGRAMS
+/**********************/
+/** PROGRAMS **/
+
+.programs-header {
+  padding: 0 0 12% 0;
+  background: url(img/backgrounds/home-header-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h1 {
+    position: relative;
+    top: 20px;
+    z-index: 1;
+  }
+}
+
+#program-interior .large-4 {
+  padding: 15% 0;
+}
+
+.programs {
+  padding: 25px 0 50px 0;
+  border-top: 5px solid $white;
+  position: relative;
+  background: url(img/backgrounds/programs-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .large-4 {
+    div {
+      color: $white;
+      background: $main-color-red;
+      padding: 15px 0 30px 0;
+      h2 {
+        font-size: 2.2rem;
+        color: $white;
+        margin: 15px 0 0 0;
+      }
+      p {
+        &:nth-of-type(1) {
+          margin-bottom: 10px;
+          line-height: 1.4;
+        }
+        &:nth-of-type(2) {
+          margin: 0;
+          color: $white;
+          span:first-of-type {
+            font-style: italic;
+          }
+        }
+      }
+    }
+    .program-icon {
+      position: relative;
+      top: 30px;
+    }
+    .red-button {
+      position: relative;
+      bottom: 15px;
+    }
+  }
+}
+
+.program-cta {
+  padding: 25px 0 20px 0;
+  border-top: 5px solid $white;
+  img {
+    position: relative;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 64.063em) {
+  .programs .large-4 .red-button {
+    width: 90%;
+  }
+}
+
+/** COSMETOLOGY -  HEADER **/
+
+.cos-header, .cos-sub-header {
+  background: url(img/backgrounds/cosmetology-header-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.cos-header h1, .cos-sub-header h1 {
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+  z-index: 1;
+  padding-right: 20px;
+  padding-left: 30px;
+  left: 25px;
+}
+
+.cos-header h1::before, .cos-sub-header h1::before {
+  width: 70px;
+  height: 70px;
+  margin-right: -35px;
+  content: "";
+  background: url(img/icons/cosmetology-icon.png) no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  bottom: -10px;
+}
+
+.cos-header .transparent-white, .cos-sub-header .transparent-white {
+  margin-top: 3%;
+}
+
+.cos-header {
+  padding: 0 0 10% 0;
+}
+
+.cos-sub-header {
+  padding: 0 0 8% 0;
+  h1 {
+    top: 0;
+  }
+}
+
+/** ESTHETICS -  HEADER **/
+
+.esthetics-header, .esthetics-sub-header {
+  background: url(img/backgrounds/esthetics-header-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.esthetics-header h1, .esthetics-sub-header h1 {
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+  z-index: 1;
+  padding-right: 20px;
+  padding-left: 30px;
+  left: 25px;
+}
+
+.esthetics-header h1::before, .esthetics-sub-header h1::before {
+  width: 70px;
+  height: 70px;
+  margin-right: -35px;
+  content: "";
+  background: url(img/icons/esthetics-icon.png) no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  bottom: -10px;
+}
+
+.esthetics-header .transparent-white, .esthetics-sub-header .transparent-white {
+  margin-top: 3%;
+}
+
+.esthetics-header {
+  padding: 0 0 10% 0;
+}
+
+.esthetics-sub-header {
+  padding: 0 0 8% 0;
+  h1 {
+    top: 0;
+  }
+}
+
+/** LASER -  HEADER **/
+
+.laser-header, .laser-sub-header {
+  background: url(img/backgrounds/laser-header-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.laser-header h1, .laser-sub-header h1 {
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+  z-index: 1;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.laser-header h1::before, .laser-sub-header h1::before {
+  width: 70px;
+  height: 70px;
+  margin-right: -35px;
+  content: "";
+  background: url(img/icons/laser-icon.png) no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  bottom: -10px;
+}
+
+.laser-header .transparent-white, .laser-sub-header .transparent-white {
+  margin-top: 3%;
+}
+
+.laser-header {
+  padding: 0 0 10% 0;
+}
+
+.laser-sub-header {
+  padding: 0 0 8% 0;
+  h1 {
+    top: 0;
+  }
+}
+
+/** PROGRAMS - WHY PENROSE **/
+
+.program-why {
+  h1 {
+    margin: 0 0 3% 0;
+    //line-height: 1;
+  }
+  .panel {
+    background: $white;
+    border: 5px solid $main-color-green;
+    text-align: center;
+    border: none;
+    h2 {
+      font-size: 1.8rem;
+      color: $main-color-blue;
+    }
+    h3 {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+    p {
+      line-height: 1.2;
+      font-size: 1.1em;
+      margin: 0 0 7px 0;
+    }
+  }
+}
+
+/** PROGRAMS - HIGHLIGHTS **/
+
+.cos-program-highlights {
+  padding: 4% 0 4% 0;
+  background: url(img/backgrounds/cos-highlights-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    .transparent-white {
+      margin-left: 20px;
+    } 
+}
+
+.esthetics-program-highlights {
+  padding: 2% 0 4% 0;
+  background: url(img/backgrounds/esthetics-highlights-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    .transparent-white {
+      margin-left: 20px;
+    }  
+}
+
+.laser-program-highlights {
+  padding: 2% 0 4% 0;
+  background: url(img/backgrounds/laser-highlights-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    .transparent-white {
+      margin-left: 20px;
+    } 
+}
+
+.cos-program-highlights h1, .esthetics-program-highlights h1, .laser-program-highlights h1 {
+  position: relative;
+  top: 15px;
+}
+
+.cos-program-highlights ul, .esthetics-program-highlights ul, .laser-program-highlights ul {
+  width: 97%;
+}
+
+.cos-program-highlights ul li, .esthetics-program-highlights ul li, .laser-program-highlights ul li {
+  font-weight: 300;
+  color: $gray;
+  list-style: disc;
+  padding-bottom: .8%;
+}
+
+@media only screen and (max-width: 40.063em) {
+  .cos-program-highlights ul li, .esthetics-program-highlights ul li, .laser-program-highlights ul li {
+    margin-bottom: 3%;
+  }
+}
+
+/** TUITION BREAKDOWN **/
+
+.cos-tuition-breakdown {
+  background: url(img/backgrounds/cos-tuition-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.esthetics-tuition-breakdown {
+  background: url(img/backgrounds/esthetics-tuition-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.laser-tuition-breakdown {
+  background: url(img/backgrounds/laser-tuition-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.cos-tuition-breakdown, .esthetics-tuition-breakdown, .laser-tuition-breakdown {
+  padding: 4% 0 0 0;
+}
+
+.cos-tuition-breakdown table, .esthetics-tuition-breakdown table, .laser-tuition-breakdown table {
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  margin: 2% auto 5% auto;
+  padding: 1% 0;
+}
+
+.cos-tuition-breakdown table th, .esthetics-tuition-breakdown table th, .laser-tuition-breakdown table th {
+  font-family: 'endurance_w01_boldregular';
+  color: $gray;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.cos-tuition-breakdown table tr, .esthetics-tuition-breakdown table tr, .laser-tuition-breakdown table tr {
+  background: none;
+}
+
+.cos-tuition-breakdown table td, .esthetics-tuition-breakdown table td, .laser-tuition-breakdown table td {
+  font-family: 'endurance_w01_lightregular';
+  font-size: 3em;
+  color: $gray;
+}
+
+.mobile-formula {
+  border-collapse: collapse;
+  border-spacing: none;
+  tr td:first-child {
+    text-transform: uppercase;
+    font-family: 'endurance_w01_boldregular';
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-right: 50px;
+  }
+  td {
+    text-align: right;
+  }
+  .table-border td {
+    border-bottom: 2px solid $white;
+  }
+}
+
+@media only screen and (max-width: 56em) {
+  .tuition-breakdown table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    td {
+      font-size: 2.5em;
+    }
+  }
+}
+
+/** TUITION COMPARISON **/
+
+.tuition-comparison {
+  padding: 3% 0 5% 0;
+  background: url(img/backgrounds/line-background.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .large-3 {
+    position: relative;
+    div {
+      &:not(.align) {
+        background: $main-color-blue;
+        color: $white;
+        margin-top: 3px;
+      }
+      &:nth-of-type(1) {
+        padding: 2% 0;
+      }
+    }
+    span {
+      line-height: 1;
+    }
+  }
+  .align {
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+  }
+  .avalon-tuition, .aveda-tuition {
+    padding: 22% 0;
+  }
+  .toni-tuition {
+    padding: 26% 0;
+  }
+  .paul-tuition {
+    padding: 30% 0;
+  }
+  .school {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .school-cost {
+    font-family: 'endurance_w01_lightregular';
+    font-size: 1.75em;
+    margin-bottom: 5px;
+  }
+  .item {
+    font-weight: 600;
+    font-size: 0.750em;
+    text-transform: uppercase;
+  }
+  .item-cost {
+    font-family: 'endurance_w01_lightregular';
+    font-size: 1.375em;
+  }
+}
+
+@media only screen and (max-width: 40.063em) {
+  .tuition-comparison {
+    background: none;
+  }
+}
+
+/** TUITION - FINANCIAL AID **/
+
+.financial-aid {
+  h1 {
+    padding: 0 40px 0 40px;
+  }
+  a {
+    border: 2px solid $white;
+    padding: 10px 20px;
+    color: $white;
+    font-family: 'endurance_w01_lightregular';
+    font-size: 1.125em;
+    text-transform: uppercase;
+    &:hover {
+      background: $white;
+      color: $main-color-blue;
+    }
+  }
+}
+
+/** FINANCIAL AID QUESTIONS FORM **/
+
+.financial-questions-form {
+  textarea {
+    border: none;
+    overflow: auto;
+    color: #999;
+  }
+  input[type="text"] {
+    border: none;
+    color: #999;
+  }
+  p.white {
+    font-size: 1.375em;
+    margin: 0 0 2% 0;
+  }
+  label {
+    font-size: 1em;
+    font-weight: 300;
+  }
+}
+
+/** ZONES **/
+
+.zones .single-zone {
+  &:nth-child(odd) {
+    background: url(img/backgrounds/line-background.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  padding: 2% 0;
+  h2 {
+    margin-bottom: 2%;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 2%;
+  }
+  ul {
+    margin: 0 0 20px 20px;
+    li {
+      font-weight: 300;
+      list-style: disc;
+    }
+  }
+  .large-6 {
+    padding-left: 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 40.063em) {
+  .single-zone img {
+    bottom: 0;
+  }
+}
+
+/** STUDENT KIT **/
+
+.student-kit .kit-item {
+  &:nth-child(odd) {
+    background: url(img/backgrounds/line-background.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  padding: 1% 0;
+  img {
+    margin: 15px 0;
+  }
+  h2 {
+    padding: 0;
+    font-family: 'endurance_w01_boldregular';
+    font-size: 1rem;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/** EDUCATOR TRAINING **/
+
+.training-header {
+  padding: 0 0 6% 0;
+  border-bottom: 5px solid $white;
+  background: url(img/backgrounds/educator-training-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h1 {
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    padding-right: 20px;
+    padding-left: 30px;
+    left: 25px;
+    &::before {
+      width: 80px;
+      height: 64px;
+      content: "";
+      background: url(img/icons/educator-training-icon.png) no-repeat 0 0;
+      background-size: 100%;
+      vertical-align: middle;
+      display: inline-block;
+      position: absolute;
+      left: -55px;
+      bottom: -8px;
+    }
+  }
+}
+
+.training-intro ul {
+  margin-left: 3%;
+  li {
+    list-style: disc;
+    font-weight: 300;
+  }
+}
+
+.training-tuition {
+  padding: 3% 0;
+  border-top: 5px solid $white;
+  background: url(img/backgrounds/training-tuition-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .panel {
+    background: $white;
+    text-align: center;
+    div {
+      padding: 10px 0;
+      h3 {
+        line-height: 1;
+        font-size: 1.4em;
+        margin: 0;
+      }
+    }
+    h2 {
+      font-size: 1.8em;
+      color: $main-color-blue;
+      margin-bottom: 0;
+      line-height: 1;
+      &:last-of-type {
+        font-size: 1.8em;
+      }
+    }
+    p {
+      font-size: 1.2em;
+    }
+    table {
+      color: $gray;
+      width: 90%;
+      margin: 0 auto 15px auto;
+      th {
+        font-size: .7em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      td {
+        font-size: 1.4em;
+        font-weight: 300;
+        line-height: .5;
+      }
+    }
+    .et-mobile-table td {
+      font-weight: 400;
+      text-align: right;
+      padding-bottom: 10px;
+    }
+  }
+}

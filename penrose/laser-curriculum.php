@@ -35,11 +35,11 @@ Template Name: Laser Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone A: Days 1 – 5 (42.5 hours)</h2>							
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Highlights</h3>
 										<?php the_field('laser_cur_zone_a_hl'); ?>									
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Business &amp; Life Skills</h3>
 										<?php the_field('laser_cur_zone_a_skills'); ?>	
 								</div>	
@@ -55,11 +55,11 @@ Template Name: Laser Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone B: Days 6 – 11 (45.5 hours)</h2>							
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Highlights</h3>
 										<?php the_field('laser_cur_zone_b_hl'); ?>											
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Business &amp; Life Skills</h3>
 										<?php the_field('laser_cur_zone_b_skills'); ?>									
 								</div>	

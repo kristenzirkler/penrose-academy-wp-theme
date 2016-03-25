@@ -20,10 +20,10 @@ Template Name: About Penrose
 	
 	<?php include("menus/about-sub-menu.php"); ?>	
 	
-	<section class="about-compare blue-bg">
+	<section class="about-compare white-bg">
 		<div class="row">
 			<div class="columns">
-				<h1 class="white-header-blue no-margin-bottom">How We Compare</h1>
+				<h1 class="green-header">How We Compare</h1>
 			</div>	
 		</div>	
 		<div class="row">

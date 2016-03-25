@@ -20,10 +20,10 @@ Template Name: Laser Program
 	
 	<?php include("menus/laser-sub-menu.php"); ?>
 		
-	<section class="program-why">
+	<section class="program-why white-bg">
 		<div class="row">
 			<div class="large-6 columns">
-				<h1 class="white no-padding-left">Why Penrose</h1>
+				<h1 class="green-header">Why Penrose</h1>
 					<?php the_field('laser_intro_text'); ?>
 			</div>	
 			

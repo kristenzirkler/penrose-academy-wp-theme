@@ -3,7 +3,7 @@
 // Load CSS
 function penrose_styles() {
 	wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/foundation.min.css' );
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css?v=2&', '', false );
 }
 add_action( 'wp_enqueue_scripts', 'penrose_styles' );	
 

@@ -1,0 +1,440 @@
+
+/******************************
+
+ABOUT 
+  
+*****************************/
+/** ABOUT - HEADERS **/
+
+.about-header, .about-sub-header {
+  background: url(img/backgrounds/about-header-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-header {
+  padding: 0 0 11% 0;
+}
+
+.about-sub-header {
+  padding: 0 0 10% 0;
+}
+
+.about-header h1, .about-sub-header h1 {
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  z-index: 1;
+  padding-right: 20px;
+  padding-left: 30px;
+  left: 25px;
+}
+
+.about-header h1::before, .about-sub-header h1::before {
+  width: 70px;
+  height: 70px;
+  content: "";
+  background: url(img/icons/about-icon.png) no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  bottom: -10px;
+}
+
+/** ABOUT - COMPARE **/
+
+.about-compare {
+  p {
+    margin-top: 2%;
+  }
+  ul {
+    margin: 3% 0 0;
+    padding-left: 3%;
+    li {
+      font-weight: 300;
+      list-style: disc;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+/** ABOUT - PREPARE **/
+
+.about-prepare {
+  border-bottom: 5px solid $white;
+  padding: 2% 0 5% 0;
+  background: url(img/backgrounds/prepare-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h1 {
+    position: relative;
+    top: 15px;
+  }
+  .transparent-white {
+    width: 97%;
+  }
+  ul {
+    margin-bottom: 0;
+    li {
+      font-weight: 300;
+      color: $gray;
+      list-style: disc;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+/** ABOUT - TESTIMONIAL **/
+
+.about-testimonial {
+  padding: 6% 0 4% 0;
+  background: url(img/backgrounds/testimonial-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .red-header {
+    position: relative;
+    z-index: 10;
+    top: 15px;
+  }
+}
+
+.testimonial-name {
+  background: $main-color-red;
+  color: $white;
+  font-size: 1.8em;
+  font-family: 'endurance_w01_lightregular';
+  padding: 8px 15px 8px 15px;
+  position: relative;
+  bottom: 30px;
+  z-index: 1;
+}
+
+/** STAFF - HEADER **/
+
+.staff-header {
+  border-bottom: 5px solid $white;
+  background: url(img/backgrounds/girl-hat.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/** STAFF - FOUNDERS **/
+
+.team .staff-member h2, .founders .staff-member h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+  display: block;
+  margin-top: 5%;
+}
+
+.team .staff-member p, .founders .staff-member p {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin: 2% 0 0 0;
+}
+
+.team .large-3:last-of-type, .founders .large-3:last-of-type {
+  float: left;
+}
+
+/** STAFF - BIO **/
+
+.bio {
+  padding: 3% 0;
+  .large-6 {
+    &:nth-of-type(2) {
+      border-top: 10px solid #f5f5f5;
+      padding-top: 2%;
+      position: relative;
+      .question {
+        font-weight: 700;
+        margin-bottom: 0;
+        line-height: 1.4;
+      }
+      ul li {
+        font-weight: 300;
+        list-style: disc;
+        margin-bottom: 7px;
+      }
+    }
+    &:first-of-type {
+      img {
+        width: 100%;
+      }
+      div {
+        background: rgba(36, 233, 180, 0.9);
+        position: absolute;
+        width: 94%;
+        bottom: -1px;
+        padding-left: 1em;
+        color: $white;
+        h2 {
+          text-transform: inherit;
+        }
+        p {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 1.125em;
+        }
+        .certs {
+          font-weight: 300;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.partners-header {
+  background: url(img/backgrounds/girl-hat.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0 0 6% 0;
+}
+
+/** PARTNERS **/
+
+.partners {
+  .single-partner, .single-member {
+    padding: 2% 0;
+  }
+}
+
+.memberships {
+  .single-partner, .single-member {
+    padding: 2% 0;
+  }
+}
+
+.partners {
+  .single-partner {
+    .visit-partner, .visit-member {
+      float: right;
+    }
+  }
+  .single-member {
+    .visit-partner, .visit-member {
+      float: right;
+    }
+  }
+}
+
+.memberships {
+  .single-partner {
+    .visit-partner, .visit-member {
+      float: right;
+    }
+  }
+  .single-member {
+    .visit-partner, .visit-member {
+      float: right;
+    }
+  }
+}
+
+.partners {
+  .single-partner {
+    .visit-partner p, .visit-member p {
+      font-style: italic;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+  }
+  .single-member {
+    .visit-partner p, .visit-member p {
+      font-style: italic;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+  }
+}
+
+.memberships {
+  .single-partner {
+    .visit-partner p, .visit-member p {
+      font-style: italic;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+  }
+  .single-member {
+    .visit-partner p, .visit-member p {
+      font-style: italic;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+  }
+}
+
+.partners {
+  .single-partner {
+    .visit-partner .green-button, .visit-member .green-button {
+      padding: 4px 20px;
+    }
+  }
+  .single-member {
+    .visit-partner .green-button, .visit-member .green-button {
+      padding: 4px 20px;
+    }
+  }
+}
+
+.memberships {
+  .single-partner {
+    .visit-partner .green-button, .visit-member .green-button {
+      padding: 4px 20px;
+    }
+  }
+  .single-member {
+    .visit-partner .green-button, .visit-member .green-button {
+      padding: 4px 20px;
+    }
+  }
+}
+
+.partners {
+  .single-partner h2, .single-member h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1%;
+  }
+}
+
+.memberships {
+  .single-partner h2, .single-member h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1%;
+  }
+}
+
+.partners {
+  .single-partner:nth-child(odd), .single-member:nth-child(odd) {
+    background: url(img/backgrounds/partner-pattern.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+.memberships {
+  .single-partner:nth-child(odd), .single-member:nth-child(odd) {
+    background: url(img/backgrounds/partner-pattern.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+.partners {
+  .single-partner:nth-child(odd) h2, .single-member:nth-child(odd) h2 {
+    color: $main-color-green;
+    background: $white;
+  }
+}
+
+.memberships {
+  .single-partner:nth-child(odd) h2, .single-member:nth-child(odd) h2 {
+    color: $main-color-green;
+    background: $white;
+  }
+}
+
+.partners {
+  .single-partner:nth-child(odd) img, .single-member:nth-child(odd) img {
+    background: $white;
+  }
+}
+
+.memberships {
+  .single-partner:nth-child(odd) img, .single-member:nth-child(odd) img {
+    background: $white;
+  }
+}
+
+.partners {
+  .single-partner:nth-child(even) h2, .single-member:nth-child(even) h2 {
+    color: $white;
+    background: $main-color-green;
+  }
+}
+
+.memberships {
+  .single-partner:nth-child(even) h2, .single-member:nth-child(even) h2 {
+    color: $white;
+    background: $main-color-green;
+  }
+}
+
+.partners {
+  .single-partner:nth-child(even) img, .single-member:nth-child(even) img {
+    background: #ebebeb;
+  }
+}
+
+.memberships {
+  .single-partner:nth-child(even) img, .single-member:nth-child(even) img {
+    background: #ebebeb;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .single-partner .large-6 img {
+    margin-bottom: 5%;
+  }
+  .visit-partner {
+    margin-bottom: 3%;
+  }
+}
+
+/** AWARDS **/
+
+.featured-awards {
+  padding: 3% 0;
+  background: url(img/backgrounds/partner-pattern.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5% 0;
+  }
+}
+
+.awards-list {
+  h2 {
+    color: $main-color-green;
+    font-size: 1.4em;
+    margin-bottom: 1%;
+    padding-left: 0;
+  }
+  ul {
+    margin-left: 0;
+    li {
+      font-weight: 300;
+      padding-bottom: 1%;
+    }
+  }
+}

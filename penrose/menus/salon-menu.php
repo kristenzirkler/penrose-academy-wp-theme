@@ -17,12 +17,14 @@
 					
 				<nav class="main-nav">
 					<ul class="right">
+						<li class="mobile-top-nav"><a href="tel:480-222-9540">Call Us</a></li><hr>
 						<li><a <?php if (is_page('about-student-salon-spa')) {echo 'class="current"';} ?> href="/about-student-salon-spa">About</a></li>
 						<li><a <?php if (is_page('salon-services')) {echo 'class="current"';} ?> href="/salon-services">Salon</a></li>
 						<li><a <?php if (is_page('spa-services')) {echo 'class="current"';} ?> href="/spa-services">Spa</a></li>
 						<li><a <?php if (is_page('medical-spa')) {echo 'class="current"';} ?> href="/medical-spa">Medical Spa</a></li>
 						<li><a <?php if (is_page('schedule-appointment')) {echo 'class="current"';} ?> href="/schedule">Schedule a Service</a></li>
 						<li><a <?php if (is_page('featured-services')) {echo 'class="current"';} ?> href="/featured-services">Featured Services</a></li>
+						<hr>
 						<li class="pa-button"><a href="/">Penrose Academy</a>			
 					</ul>	
 				</nav>				

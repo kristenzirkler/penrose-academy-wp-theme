@@ -35,18 +35,18 @@ Template Name: Cosmetology Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 1: The Foundation</h2>											
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 									<?php the_field( 'cosmetology_zone_1_technical' ); ?>	
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 									<?php the_field( 'cosmetology_zone_1_theory' ); ?>
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 					
 					<?php 
 		
@@ -68,18 +68,18 @@ Template Name: Cosmetology Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 2: Apprenticeship</h2>											
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 									<?php the_field( 'cosmetology_zone_2_technical' ); ?>											
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 									<?php the_field( 'cosmetology_zone_2_theory' ); ?>
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
@@ -101,18 +101,18 @@ Template Name: Cosmetology Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 3: Makeup &amp; More</h2>												
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 									<?php the_field( 'cosmetology_zone_3_technical' ); ?>										
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 									<?php the_field( 'cosmetology_zone_3_theory' ); ?>									
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
@@ -134,18 +134,18 @@ Template Name: Cosmetology Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 4: Editorial Styling</h2>													
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 									<?php the_field( 'cosmetology_zone_4_technical' ); ?>										
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 									<?php the_field( 'cosmetology_zone_4_theory' ); ?>											
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
@@ -167,18 +167,18 @@ Template Name: Cosmetology Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header left">Zone 5: Nails</h2>																					
-								<div class="large-6 columns clear">
+								<div class="medium-6 columns clear">
 									<h3>Technical</h3>
 									<?php the_field( 'cosmetology_zone_5_technical' ); ?>									
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 									<?php the_field( 'cosmetology_zone_5_theory' ); ?>										
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
@@ -200,18 +200,18 @@ Template Name: Cosmetology Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 6: Focus on the Future</h2>							
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 									<?php the_field( 'cosmetology_zone_6_technical' ); ?>									
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 									<?php the_field( 'cosmetology_zone_6_theory' ); ?>
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns"> 
 
 					<?php 
 		

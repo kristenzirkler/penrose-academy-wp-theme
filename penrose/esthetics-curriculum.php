@@ -35,18 +35,18 @@ Template Name: Esthetics Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 1: Science and Business</h2>					
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 										<?php the_field('est_cur_zone_1_technical'); ?>										
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 										<?php the_field('est_cur_zone_1_theory'); ?>	
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
@@ -68,18 +68,18 @@ Template Name: Esthetics Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 2: Student Spa &amp; New Techniques</h2>					
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 										<?php the_field('est_cur_zone_2_technical'); ?>									
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 										<?php the_field('est_cur_zone_2_theory'); ?>
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
@@ -101,18 +101,18 @@ Template Name: Esthetics Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 3: Advanced Practices</h2>						
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 										<?php the_field('est_cur_zone_3_technical'); ?>											
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 										<?php the_field('est_cur_zone_3_theory'); ?>
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
@@ -134,18 +134,18 @@ Template Name: Esthetics Curriculum
 					<div class="row">
 						<div class="large-12 columns">
 							<h2 class="blue-header">Zone 4: Skin Careers &amp; Beyond</h2>							
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Technical</h3>
 										<?php the_field('est_cur_zone_4_technical'); ?>										
 								</div>	
-								<div class="large-6 columns">
+								<div class="medium-6 columns">
 									<h3>Theory</h3>
 										<?php the_field('est_cur_zone_4_theory'); ?>									
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
 				</div>	
-				<div class="large-4 medium-4 columns">
+				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
 		
