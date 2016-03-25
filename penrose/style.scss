@@ -1,3 +1,8 @@
+---
+---
+
+@import 'variables';
+
 /*
 Theme Name: Brikk
 Theme URI: https://penrose.edu
@@ -7,9 +12,13 @@ Description: 2015 Wordpress theme for Penrose Academy.
 Version: 1.0
 */
 /***********************
-	   NORMALIZE
+     NORMALIZE
 /**********************/
 
+iframe[name=google_conversion_frame] {
+  position: fixed;
+  bottom: -13px;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -231,17 +240,17 @@ td, th {
 
 
 /***********************
-	   GLOBAL
+     GLOBAL
 /**********************/
 
 .hidden-schema {
-	display: none;
+  display: none;
 }
 
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #4a4d57;
+  color: $gray;
 }
 
 .wrapper {
@@ -254,7 +263,7 @@ p {
   font-size: 1em;
   font-weight: 300;
   a {
-    color: #00dfe8;
+    color: $main-color-blue;
     text-decoration: underline;
   }
 }
@@ -286,40 +295,40 @@ h2 {
 /** COLORS **/
 
 .white {
-  color: #fff;
+  color: $white;
 }
 
 .blue {
-  color: #00dfe8;
+  color: $main-color-blue;
 }
 
 .green-header, .blue-header, .red-header {
-  color: #fff;
+  color: $white;
   margin-bottom: 10px;
 }
 
 .green-header {
-  background: #24e9b4;
+  background: $main-color-green;
 }
 
 .blue-header {
-  background: #00dfe8;
+  background: $main-color-blue;
 }
 
 .white-header-blue {
-  color: #00dfe8;
-  background: #fff;
+  color: $main-color-blue;
+  background: $white;
   margin-bottom: 10px;
 }
 
 .white-header-green {
-  background: #fff;
-  color: #24e9b4;
+  background: $white;
+  color: $main-color-green;
   margin-bottom: 10px;
 }
 
 .red-header {
-  background: #f01754;
+  background: $main-color-red;
 }
 
 .white-bg {
@@ -327,22 +336,22 @@ h2 {
 }
 
 .blue-bg {
-  background: #5edee9;
+  background: $main-color-blue;
   padding: 35px 0;
 }
 
 .light-blue {
-  background: #8fe8f0;
+  background: $main-color-blue-light;
 }
 
 .green-bg {
-  background: #24e9b4;
+  background: $main-color-green;
   padding: 4% 0;
 }
 
 .red-button, .green-button, .blue-button {
-  color: #fff;
-  border: 1px solid #fff;
+  color: $white;
+  border: 1px solid $white;
   font-family: 'endurance_w01_lightregular';
   text-transform: uppercase;
   font-size: 1.125em;
@@ -354,55 +363,55 @@ h2 {
 }
 
 .red-button {
-  background: #f01754;
-  outline: solid 3px #f01754;
+  background: $main-color-red;
+  outline: solid 3px $main-color-red;
   &:hover {
-    background: #D6154B;
-    outline: solid 3px #D6154B;
-    color: #fff;
+    background: $main-color-red-dark;
+    outline: solid 3px $main-color-red-dark;
+    color: $white;
   }
 }
 
 .green-button {
-  background: #24e9b4;
-  outline: solid 3px #24e9b4;
+  background: $main-color-green;
+  outline: solid 3px $main-color-green;
   &:hover {
-    background: #20CFA0;
-    outline: solid 3px #20CFA0;
-    color: #fff;
+    background: $main-color-green-dark;
+    outline: solid 3px $main-color-green-dark;
+    color: $white;
   }
 }
 
 .blue-button {
-  background: #00dfe8;
-  outline: solid 3px #00dfe8;
+  background: $main-color-blue;
+  outline: solid 3px $main-color-blue;
   &:hover {
-    background: #00C6CE;
-    outline: solid 3px #00C6CE;
-    color: #fff;
+    background: $main-color-blue-dark;
+    outline: solid 3px $main-color-blue-dark;
+    color: $white;
   }
 }
 
 @media only screen and (max-width: 40.063em) {
-	.red-button, .green-button, .blue-button {
-	width: 100%;
-	}
-	.red-header, .blue-header, .green-header, .white-header-blue, .white-header-green, .white, .blue {
-	font-size: 1.6em;
-	line-height: 1.1;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	}
-	.red-header + .large-10 p:first-of-type {
-	  padding-top: 20px;
-	}
+  .red-button, .green-button, .blue-button {
+  width: 100%;
+  }
+  .red-header, .blue-header, .green-header, .white-header-blue, .white-header-green, .white, .blue {
+  font-size: 1.6em;
+  line-height: 1.1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .red-header + .large-10 p:first-of-type {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (min-width: 40.063em) {
 .rwd-break {
     display: none;
 }
-	
+  
 }
 
 .clear {
@@ -438,15 +447,15 @@ ul {
   padding-top: 0;
 }
 .no-margin-top {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .transparent-white {
   background: rgba(255, 255, 255, 0.9);
   padding: 30px 25px 20px 25px;
-  	p:last-of-type {
-	  	margin-bottom: 0;
-  	}
+    p:last-of-type {
+      margin-bottom: 0;
+    }
 }
 
 button {
@@ -465,13 +474,13 @@ button {
 /** FOOTER **/
 
 footer {
-  border-top: 5px solid #fff;
-  background: #454648;
+  border-top: 5px solid $white;
+  background: $gray-dark;
   overflow: auto;
   clear: both;
   p, a, address {
     font-size: 0.75em;
-    color: #fff;
+    color: $white;
   }
   p strong, a strong, address strong {
     font-weight: 700;
@@ -514,7 +523,7 @@ footer {
   }
   .medium-3 {
     min-height: 360px;
-    border-left: 3px solid #fff;
+    border-left: 3px solid $white;
     p {
       margin-top: 3%;
     }
@@ -528,7 +537,7 @@ footer {
 }
 
 /***********************
-	   NAVIGATION
+     NAVIGATION
 /**********************/
 /** HEADER NAV **/
 
@@ -537,28 +546,28 @@ footer {
   overflow: hidden;  
 }
 .salon-header-nav, .academy-header-nav {
-	padding: 40px 0 0 5%;
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );	  
+  padding: 40px 0 0 5%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );    
 }
 
 @media only screen and (max-width: 64.063em) {
   .academy-header-nav {
-	display: none;  
+  display: none;  
   }   
   .academy-mobile-gradient {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );		  
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );      
   } 
 }
 
@@ -573,13 +582,13 @@ footer {
     display: none;  
   }  
   .salon-mobile-gradient {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );		  
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );      
   }   
 }
 
@@ -590,7 +599,7 @@ footer {
 }
 
 .mobile-logo, .salon-mobile-logo {
-	margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 #site-canvas, #salon-site-canvas {
@@ -622,20 +631,20 @@ footer {
   top: 0;
   z-index: 10;
   right: -200px;
-  background: #454648;
+  background: $gray-dark;
   text-align: right;
   padding: 0 0 20px 0;
   ul {
     margin: 0;
   }
   a {
-    color: #fff;
+    color: $white;
     font-size: 0.875em;
     display: block;
     padding: 5px 5px 5px 0;
     &:hover {
-      background: #fff;
-      color: #454648;
+      background: $white;
+      color: $gray-dark;
     }
   }
   .mobile-top-nav {
@@ -651,18 +660,18 @@ footer {
   position: absolute;
   right: 15px;
   top: 0;
-  color: #fff;
+  color: $white;
   font-size: 2em;
 }
 
 a.toggle-nav {
   &:hover, &:active, &:focus {
-    color: #fff;
+    color: $white;
   }
 }
 
 .line-one {
-  background: #fff;
+  background: $white;
   height: 4px;
   width: 10em;
   position: relative;
@@ -671,7 +680,7 @@ a.toggle-nav {
   &:after {
     content: "";
     position: absolute;
-    background: #fff;
+    background: $white;
     top: 0;
     right: -2px;
     bottom: 0;
@@ -684,7 +693,7 @@ a.toggle-nav {
 }
 
 .line-two {
-  background: #fff;
+  background: $white;
   height: 4px;
   margin-left: 105px;
   position: relative;
@@ -693,7 +702,7 @@ a.toggle-nav {
   &:before {
     content: "";
     position: absolute;
-    background: #fff;
+    background: $white;
     top: 0;
     left: -2px;
     bottom: 0;
@@ -714,7 +723,7 @@ a.toggle-nav {
     margin-left: 10px;
     a {
       font-size: .9em;
-      color: #fff;
+      color: $white;
       i {
         font-size: 1.5em;
       }
@@ -730,24 +739,24 @@ a.toggle-nav {
     a {
       font-family: 'endurance_w01_regularregular';
       font-size: 0.875em;
-      color: #fff;
+      color: $white;
       text-transform: uppercase;
       display: block;
       padding: 15px 10px;
       &:hover {
-        color: #333;
-        background: #fff;
+        color: $gray-darker;
+        background: $white;
       }
     }
     .current {
-      color: #333;
-      background: #fff;
+      color: $gray-darker;
+      background: $white;
     }
   }
   li:last-of-type {
     width: 140px;
     height: 55px;
-    background: #454648;
+    background: $gray-dark;
     position: relative;
     bottom: 0;
     margin-left: 40px;
@@ -756,13 +765,13 @@ a.toggle-nav {
       font-size: 1em;
       &:hover {
         background: none;
-        color: #fff;
+        color: $white;
       }
     }
     &:before {
       content: "";
       position: absolute;
-      background: #454648;
+      background: $gray-dark;
       top: 0;
       left: -15px;
       bottom: 0;
@@ -791,7 +800,7 @@ a.toggle-nav {
       font-size: 0.875em;
       text-transform: inherit;
       font-family: 'Open Sans', sans-serif;
-      color: #4a4d57;
+      color: $gray;
       padding: 0;
       &:hover {
         text-decoration: underline;
@@ -821,7 +830,7 @@ a.toggle-nav {
     font-size: 0.875em;
     text-transform: inherit;
     font-family: 'Open Sans', sans-serif;
-    color: #4a4d57;
+    color: $gray;
     padding: 0;
     &:hover {
       text-decoration: underline;
@@ -840,7 +849,7 @@ a.toggle-nav {
     font-size: 0.875em;
     text-transform: inherit;
     font-family: 'Open Sans', sans-serif;
-    color: #4a4d57;
+    color: $gray;
     padding: 0;
     &:hover {
       text-decoration: underline;
@@ -851,8 +860,8 @@ a.toggle-nav {
 /** SUB-MENU **/
 
 .sub-menu {
-  background: #24e9b4;
-  border-top: 3px solid #fff;
+  background: $main-color-green;
+  border-top: 3px solid $white;
   ul {
     text-align: center;
     padding: 8px 0;
@@ -865,10 +874,10 @@ a.toggle-nav {
         font-family: 'endurance_w01_boldregular';
         text-transform: uppercase;
         font-size: 0.875em;
-        color: #4a4d57;
+        color: $gray;
       }
       .current, :hover {
-        color: #fff;
+        color: $white;
       }
     }
   }
@@ -879,7 +888,7 @@ a.toggle-nav {
   span {
     display: block;
     padding: 10px 0;
-    color: #fff;
+    color: $white;
     cursor: pointer;
     text-transform: uppercase;
     i {
@@ -902,7 +911,7 @@ nav#sub-mobile {
     right: 0;
     margin: 0 auto;
     text-align: center;
-    background: #24e9b4;
+    background: $main-color-green;
     z-index: 10;
     li {
       display: block;
@@ -911,13 +920,13 @@ nav#sub-mobile {
       a {
         display: block;
         padding: 10px 30px;
-        color: #4a4d57;
+        color: $gray;
         text-transform: uppercase;
         font-family: 'endurance_w01_boldregular';
         font-size: 0.875em;
         &:hover {
-          background: #20CFA0;
-          color: #fff;
+          background: $main-color-green-dark;
+          color: $white;
         }
       }
     }
@@ -927,10 +936,10 @@ nav#sub-mobile {
 @media all and (max-width: 40.063em) {
   #sub-trigger {
     display: block;
-    background: #24e9b4;
+    background: $main-color-green;
     width: 100%;
     text-align: center;
-    border-top: 5px solid #fff;
+    border-top: 5px solid $white;
   }
   nav {
     &.sub-menu {
@@ -943,7 +952,7 @@ nav#sub-mobile {
 }
 
 /***********************
-	   HOME PAGE
+     HOME PAGE
 /**********************/
 /** HOME - HEADER **/
 
@@ -955,7 +964,7 @@ nav#sub-mobile {
   -o-background-size: cover;
   background-size: cover;
   .transparent-white {
-	  padding-bottom: 30px;
+    padding-bottom: 30px;
   }
   h1 {
     position: relative;
@@ -971,8 +980,8 @@ nav#sub-mobile {
 /** HOME - FEATURED **/
 
 .home-featured {
-  background: #5edee9;
-  border-top: 5px solid #fff;
+  background: $main-color-blue;
+  border-top: 5px solid $white;
   padding: 3% 0;
   img {
     margin: 15px 0;
@@ -984,7 +993,7 @@ nav#sub-mobile {
 .video-wrap {
   position: relative;
   clear: both;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   .video-cover {
     position: absolute;
     top: 30%;
@@ -1019,7 +1028,7 @@ nav#sub-mobile {
 }
 
 /***********************
-	   PROGRAMS
+     PROGRAMS
 /**********************/
 /** PROGRAMS **/
 
@@ -1043,7 +1052,7 @@ nav#sub-mobile {
 
 .programs {
   padding: 25px 0 50px 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   position: relative;
   background: url(img/backgrounds/programs-bg.jpg) no-repeat;
   -webkit-background-size: cover;
@@ -1052,12 +1061,12 @@ nav#sub-mobile {
   background-size: cover;
   .large-4 {
     div {
-      color: #fff;
-      background: #f01754;
+      color: $white;
+      background: $main-color-red;
       padding: 15px 0 30px 0;
       h2 {
         font-size: 2.2rem;
-        color: #fff;
+        color: $white;
         margin: 15px 0 0 0;
       }
       p {
@@ -1067,7 +1076,7 @@ nav#sub-mobile {
         }
         &:nth-of-type(2) {
           margin: 0;
-          color: #fff;
+          color: $white;
           span:first-of-type {
             font-style: italic;
           }
@@ -1087,7 +1096,7 @@ nav#sub-mobile {
 
 .program-cta {
   padding: 25px 0 20px 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   img {
     position: relative;
     bottom: 20px;
@@ -1249,12 +1258,12 @@ nav#sub-mobile {
 /** PROGRAMS - WHY PENROSE **/
 
 .program-why {
-  background: #5edee9;
-  color: #fff;
+  background: $main-color-blue;
+  color: $white;
   padding: 3% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   .panel {
-    background: #fff;
+    background: $white;
   }
   h1 {
     margin: 0 0 3% 0;
@@ -1265,7 +1274,7 @@ nav#sub-mobile {
     border: none;
     h2 {
       font-size: 1.8rem;
-      color: #5edee9;
+      color: $main-color-blue;
     }
     h3 {
       font-size: 1.1em;
@@ -1289,9 +1298,9 @@ nav#sub-mobile {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  	.transparent-white {
-	  	margin-left: 20px;
-  	} 
+    .transparent-white {
+      margin-left: 20px;
+    } 
 }
 
 .esthetics-program-highlights {
@@ -1301,9 +1310,9 @@ nav#sub-mobile {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   	.transparent-white {
-	  	margin-left: 20px;
-  	}  
+    .transparent-white {
+      margin-left: 20px;
+    }  
 }
 
 .laser-program-highlights {
@@ -1314,8 +1323,8 @@ nav#sub-mobile {
   -o-background-size: cover;
   background-size: cover;
     .transparent-white {
-	  	margin-left: 20px;
-  	} 
+      margin-left: 20px;
+    } 
 }
 
 .cos-program-highlights h1, .esthetics-program-highlights h1, .laser-program-highlights h1 {
@@ -1329,7 +1338,7 @@ nav#sub-mobile {
 
 .cos-program-highlights ul li, .esthetics-program-highlights ul li, .laser-program-highlights ul li {
   font-weight: 300;
-  color: #4a4d57;
+  color: $gray;
   list-style: disc;
   padding-bottom: .8%;
 }
@@ -1379,7 +1388,7 @@ nav#sub-mobile {
 
 .cos-tuition-breakdown table th, .esthetics-tuition-breakdown table th, .laser-tuition-breakdown table th {
   font-family: 'endurance_w01_boldregular';
-  color: #4a4d57;
+  color: $gray;
   text-transform: uppercase;
   font-size: 0.875em;
   text-align: center;
@@ -1392,7 +1401,7 @@ nav#sub-mobile {
 .cos-tuition-breakdown table td, .esthetics-tuition-breakdown table td, .laser-tuition-breakdown table td {
   font-family: 'endurance_w01_lightregular';
   font-size: 3em;
-  color: #4a4d57;
+  color: $gray;
 }
 
 .mobile-formula {
@@ -1409,7 +1418,7 @@ nav#sub-mobile {
     text-align: right;
   }
   .table-border td {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
   }
 }
 
@@ -1436,8 +1445,8 @@ nav#sub-mobile {
     position: relative;
     div {
       &:not(.align) {
-        background: #5edee9;
-        color: #fff;
+        background: $main-color-blue;
+        color: $white;
         margin-top: 3px;
       }
       &:nth-of-type(1) {
@@ -1495,15 +1504,15 @@ nav#sub-mobile {
     padding: 0 40px 0 40px;
   }
   a {
-    border: 2px solid #fff;
+    border: 2px solid $white;
     padding: 10px 20px;
-    color: #fff;
+    color: $white;
     font-family: 'endurance_w01_lightregular';
     font-size: 1.125em;
     text-transform: uppercase;
     &:hover {
-      background: #fff;
-      color: #5edee9;
+      background: $white;
+      color: $main-color-blue;
     }
   }
 }
@@ -1595,7 +1604,7 @@ nav#sub-mobile {
 
 .training-header {
   padding: 0 0 6% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/educator-training-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1634,14 +1643,14 @@ nav#sub-mobile {
 
 .training-tuition {
   padding: 3% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   background: url(img/backgrounds/training-tuition-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   .panel {
-    background: #fff;
+    background: $white;
     text-align: center;
     div {
       padding: 10px 0;
@@ -1653,7 +1662,7 @@ nav#sub-mobile {
     }
     h2 {
       font-size: 1.8em;
-      color: #00dfe8;
+      color: $main-color-blue;
       margin-bottom: 0;
       line-height: 1;
       &:last-of-type {
@@ -1664,7 +1673,7 @@ nav#sub-mobile {
       font-size: 1.2em;
     }
     table {
-      color: #4a4d57;
+      color: $gray;
       width: 90%;
       margin: 0 auto 15px auto;
       th {
@@ -1689,7 +1698,7 @@ nav#sub-mobile {
 /******************************
 
 ABOUT 
-	
+  
 *****************************/
 /** ABOUT - HEADERS **/
 
@@ -1735,10 +1744,10 @@ ABOUT
 /** ABOUT - COMPARE **/
 
 .about-compare {
-  border-bottom: 5px solid #fff;
-  color: #fff;
+  border-bottom: 5px solid $white;
+  color: $white;
   p {
-    color: #fff;
+    color: $white;
     margin-top: 2%;
     padding-left: 3%;
   }
@@ -1756,7 +1765,7 @@ ABOUT
 /** ABOUT - PREPARE **/
 
 .about-prepare {
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   padding: 2% 0 5% 0;
   background: url(img/backgrounds/prepare-bg.jpg) no-repeat;
   -webkit-background-size: cover;
@@ -1773,7 +1782,7 @@ ABOUT
   ul {
     li {
       font-weight: 300;
-      color: #4a4d57;
+      color: $gray;
       list-style: disc;
       padding-bottom: 5px;
     }
@@ -1797,8 +1806,8 @@ ABOUT
 }
 
 .testimonial-name {
-  background: #f01754;
-  color: #fff;
+  background: $main-color-red;
+  color: $white;
   font-size: 1.8em;
   font-family: 'endurance_w01_lightregular';
   padding: 8px 15px 8px 15px;
@@ -1810,7 +1819,7 @@ ABOUT
 /** STAFF - HEADER **/
 
 .staff-header {
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/girl-hat.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1870,7 +1879,7 @@ ABOUT
         width: 94%;
         bottom: -1px;
         padding-left: 1em;
-        color: #fff;
+        color: $white;
         h2 {
           text-transform: inherit;
         }
@@ -2033,41 +2042,41 @@ ABOUT
 
 .partners {
   .single-partner:nth-child(odd) h2, .single-member:nth-child(odd) h2 {
-    color: #24e9b4;
-    background: #fff;
+    color: $main-color-green;
+    background: $white;
   }
 }
 
 .memberships {
   .single-partner:nth-child(odd) h2, .single-member:nth-child(odd) h2 {
-    color: #24e9b4;
-    background: #fff;
+    color: $main-color-green;
+    background: $white;
   }
 }
 
 .partners {
   .single-partner:nth-child(odd) img, .single-member:nth-child(odd) img {
-    background: #fff;
+    background: $white;
   }
 }
 
 .memberships {
   .single-partner:nth-child(odd) img, .single-member:nth-child(odd) img {
-    background: #fff;
+    background: $white;
   }
 }
 
 .partners {
   .single-partner:nth-child(even) h2, .single-member:nth-child(even) h2 {
-    color: #fff;
-    background: #24e9b4;
+    color: $white;
+    background: $main-color-green;
   }
 }
 
 .memberships {
   .single-partner:nth-child(even) h2, .single-member:nth-child(even) h2 {
-    color: #fff;
-    background: #24e9b4;
+    color: $white;
+    background: $main-color-green;
   }
 }
 
@@ -2115,7 +2124,7 @@ ABOUT
 
 .awards-list {
   h2 {
-    color: #24e9b4;
+    color: $main-color-green;
     font-size: 1.4em;
     margin-bottom: 1%;
     padding-left: 0;
@@ -2130,7 +2139,7 @@ ABOUT
 }
 
 /***********************
-	   ADMISSIONS
+     ADMISSIONS
 /**********************/
 /** ADMISSIONS **/
 
@@ -2172,8 +2181,8 @@ ABOUT
   }
   &:nth-of-type(2) {
     padding: 3% 2%;
-    border-top: 5px solid #fff;
-    border-bottom: 5px solid #fff;
+    border-top: 5px solid $white;
+    border-bottom: 5px solid $white;
     background: url(img/backgrounds/admissions-cp-bg.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2189,9 +2198,9 @@ ABOUT
       z-index: 1;
     }
     h2 {
-	    position: relative;
-	    top: 15px;
-	    z-index: 10;
+      position: relative;
+      top: 15px;
+      z-index: 10;
     }
   }
 }
@@ -2248,19 +2257,19 @@ ABOUT
   background: #ccf9fa;
   padding: 2%;
   p {
-	  font-size: 0.75em;
-	  line-height: 2;
+    font-size: 0.75em;
+    line-height: 2;
   }
 }
 
 .fa-disclaimer {
-	p {
-		margin-bottom: 0;
-	}
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .fa-apply {
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/apply-background.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2273,20 +2282,20 @@ ABOUT
     z-index: 1;
   }
   .transparent-white {
-	p {
-    	margin-bottom: 15px;
-	}
+  p {
+      margin-bottom: 15px;
+  }
   }
 }
 
 .fa-questions {
   padding: 4% 0;
-  	h1 {
-	  	margin-bottom: 20px;
-  	}
-  	a {
-	  	color: #4a4d57;
-  	}
+    h1 {
+      margin-bottom: 20px;
+    }
+    a {
+      color: $gray;
+    }
 }
 
 @media only screen and (min-width: 40em) and (max-width: 64.063emem) {
@@ -2313,7 +2322,7 @@ ABOUT
 }
 
 /***********************
-	   EVENTS
+     EVENTS
 /**********************/
 
 .events-header {
@@ -2326,11 +2335,11 @@ ABOUT
   .transparent-white {
     width: 97%; 
     p {
-	    &:first-of-type {
-		    font-size: 1.2em;
-			margin-bottom: 5px;
-			margin-top: 10px;
-	    }
+      &:first-of-type {
+        font-size: 1.2em;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      }
     }
     a {
       font-size: 1.5rem;
@@ -2345,13 +2354,13 @@ ABOUT
 
 .upcoming-events {
   padding: 3% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   .large-5 {
     img {
       width: 100%;
     }
     div {
-      background: #fff;
+      background: $white;
       padding: 4%;
       h2 {
         margin: 0 0 3% 0;
@@ -2364,7 +2373,7 @@ ABOUT
   }
   a {
     text-decoration: underline;
-    color: #454648;
+    color: $gray-dark;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -2384,7 +2393,7 @@ ABOUT
         width: 100%;
         top: 1px;
         font-size: .7em;
-        color: #fff;
+        color: $white;
       }
       .event-cal-day {
         font-size: 2em;
@@ -2392,7 +2401,7 @@ ABOUT
         bottom: 2px;
         left: 0;
         width: 100%;
-        color: #fff;
+        color: $white;
       }
     }
   }
@@ -2416,7 +2425,7 @@ ABOUT
 }
 
 /***********************
-	 STUDENT LIFE
+   STUDENT LIFE
 /**********************/
 
 .student-life-header, .student-life-interior-header {
@@ -2461,45 +2470,45 @@ ABOUT
 
 .sl-editorials {
   padding: 5% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/sl-editorials-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  	h1 {
-	  	position: relative;
-	  	top: 10px;
-	  	z-index: 10;
-  	}
-  	.green-button {
-	  	margin-top: 15px;
-  	}
+    h1 {
+      position: relative;
+      top: 10px;
+      z-index: 10;
+    }
+    .green-button {
+      margin-top: 15px;
+    }
 }
 
 .sl-extra-curricular {
   padding: 5% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   background: url(img/backgrounds/extra-curricular.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  	h1 {
-	  	position: relative;
-	  	top: 10px;
-	  	z-index: 10;
-  	}
-  	.green-button {
-	  	margin-top: 15px;
-  	}
+    h1 {
+      position: relative;
+      top: 10px;
+      z-index: 10;
+    }
+    .green-button {
+      margin-top: 15px;
+    }
 }
 
 .study {
   .abroad {
     padding-top: 7%;
     min-height: 480px;
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid $white;
     background: url(img/backgrounds/study-abroad-bg.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2509,8 +2518,8 @@ ABOUT
   .states {
     padding-top: 7%;
     min-height: 480px;
-    border-bottom: 5px solid #fff;
-    border-left: 5px solid #fff;
+    border-bottom: 5px solid $white;
+    border-left: 5px solid $white;
     background: url(img/backgrounds/study-states-bg.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2518,18 +2527,18 @@ ABOUT
     background-size: cover;
   }
   .blue-button, .green-button {
-	  position: relative;
-	  bottom: 8px;
+    position: relative;
+    bottom: 8px;
   }
   .transparent-white {    
     max-width: 75%;
     margin: 0 auto;
   }
-  	h1 {
-	  	position: relative;
-	  	top: 15px;
-	  	z-index: 10;
-  	}  
+    h1 {
+      position: relative;
+      top: 15px;
+      z-index: 10;
+    }  
 }
 
 @media only screen and (max-width: 64.063em) {
@@ -2559,7 +2568,7 @@ ABOUT
 
 .cl-talent-shows {
   padding: 5% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   background: url(img/backgrounds/sl-talent-show-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2635,16 +2644,16 @@ ABOUT
 }
 
 .study-intro {
-	  h1 {
-	  color: #fff;
-	  padding-left: 0;
+    h1 {
+    color: $white;
+    padding-left: 0;
   }
 }
 .study-intro .panel {
-  background: #fff;
+  background: $white;
   text-align: center;
   h2 {
-    color: #00dfe8;
+    color: $main-color-blue;
   }
   p {
     margin: 2% 0;
@@ -2655,9 +2664,9 @@ ABOUT
   }
 }
 .study-itinerary {
-	strong {
-		font-size: 1.2em;
-	}
+  strong {
+    font-size: 1.2em;
+  }
 }
 
 .abroad-testimonial {
@@ -2698,85 +2707,85 @@ ABOUT
 
 .ev-editorial-events {
   padding: 5% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/wander-wonder-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    	h1 {
-	  	position: relative;
-	  	top: 15px;
-	  	z-index: 10;
-  	}  
+      h1 {
+      position: relative;
+      top: 15px;
+      z-index: 10;
+    }  
 }
 
 .ev-inspired {
   padding: 7% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   background: url(img/backgrounds/inspired-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    	h1 {
-	  	position: relative;
-	  	top: 15px;
-	  	z-index: 10;
-  	}  
+      h1 {
+      position: relative;
+      top: 15px;
+      z-index: 10;
+    }  
 }
 
 /** CAREER BUILDING **/
 
 .cb-industry {
   padding: 6% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   background: url(img/backgrounds/industry-day-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-      	h1 {
-	  	position: relative;
-	  	top: 15px;
-	  	z-index: 10;
-  	}  
+        h1 {
+      position: relative;
+      top: 15px;
+      z-index: 10;
+    }  
 }
 
 /** EXTRA CURRICULAR **/
 
 .student-council {
   padding: 6% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   background: url(img/backgrounds/student-council-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   	h1 {
-	  	position: relative;
-	  	top: 10px;
-	  	z-index: 10;
-  	} 
+    h1 {
+      position: relative;
+      top: 10px;
+      z-index: 10;
+    } 
 }
 
 .charity {
   padding: 8% 0;
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
   background: url(img/backgrounds/charity-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    	h1 {
-	  	position: relative;
-	  	top: 10px;
-	  	z-index: 10;
-  	}
+      h1 {
+      position: relative;
+      top: 10px;
+      z-index: 10;
+    }
 }
 
 /***********************
-	   FORMS
+     FORMS
 /**********************/
 
 .request-info-header {
@@ -2812,7 +2821,7 @@ ABOUT
 
 .ninja-forms-form-wrap * {
   .nf-desc {
-    color: #fff;
+    color: $white;
     font-size: 1.375em;
     margin: 0 0 2% 0;
   }
@@ -2852,12 +2861,12 @@ ABOUT
 }
 
 .schedule-tour-form {
-  border-bottom: 5px solid #fff;
-  border-top: 5px solid #fff;
+  border-bottom: 5px solid $white;
+  border-top: 5px solid $white;
 }
 
 .questions-form {
-  border-top: 5px solid #fff;
+  border-top: 5px solid $white;
 }
 
 .open-house {
@@ -2868,9 +2877,9 @@ ABOUT
   -o-background-size: cover;
   background-size: cover;
   .transparent-white {
-	  p:last-of-type {
-		  margin-bottom: 20px;
-	  }
+    p:last-of-type {
+      margin-bottom: 20px;
+    }
   }
   h1 {
     position: relative;
@@ -2884,7 +2893,7 @@ ABOUT
 }
 
 /***********************
-	     BLOG
+       BLOG
 /**********************/
 /** BLOG HOME **/
 
@@ -2912,14 +2921,14 @@ ABOUT
     padding-bottom: 5px;
     a {
       text-decoration: none;
-      color: #fff;
+      color: $white;
     }
   }
   p {
     font-size: 1.125em;
   }
   a {
-    color: #454648;
+    color: $gray-dark;
     font-weight: 600;
     text-decoration: underline;
   }
@@ -2946,7 +2955,7 @@ ABOUT
 }
 
 .featured-post-image {
-  background: #454648;
+  background: $gray-dark;
 }
 
 .blog-carousel {
@@ -2960,7 +2969,7 @@ ABOUT
       transform: translate(-50%, 0);
       font-family: 'endurance_w01_lightregular';
       font-size: 2.2em;
-      color: #fff;
+      color: $white;
     }
   }
   .owl-next {
@@ -2981,8 +2990,8 @@ ABOUT
 
 /** CAROUSEL **/
 /* 
- * 	Core Owl Carousel CSS File
- *	v1.3.3
+ *  Core Owl Carousel CSS File
+ *  v1.3.3
  */
 /* clearfix */
 
@@ -3065,7 +3074,7 @@ ABOUT
 }
 
 /***********************
-	 SALON & SPA
+   SALON & SPA
 /**********************/
 /** SALON & SPA HOME **/
 
@@ -3086,7 +3095,7 @@ ABOUT
     bottom: 10px;
     position: relative;
     z-index: 1;
-	margin-bottom: 450px;    
+  margin-bottom: 450px;    
   }
 }
 
@@ -3103,9 +3112,9 @@ ABOUT
 
 .salon-about {
   padding: 4% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   p {
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -3126,7 +3135,7 @@ ABOUT
 .salon-works {
   padding: 4% 0;
   margin-top: 3%;
-  background: #fff;
+  background: $white;
   .row {
     margin-bottom: 2%;
   }
@@ -3139,7 +3148,7 @@ ABOUT
 
 .salon-services-header {
   padding: 0 0 10% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/salon-services-header-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3171,14 +3180,14 @@ ABOUT
 
 .salon-menu, .spa-menu, .medispa-menu {
   padding: 3% 0;
-  border-bottom: 5px solid #fff;
-  	h1 {
-	  	margin-bottom: 25px;
-  	}
+  border-bottom: 5px solid $white;
+    h1 {
+      margin-bottom: 25px;
+    }
 }
 
 .salon-menu h3, .spa-menu h3, .medispa-menu h3 {
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   font-family: 'endurance_w01_lightregular';
   font-size: 1.75em;
@@ -3208,9 +3217,9 @@ ABOUT
 }
 
 @media only screen and (max-width: 64.063em) {
-	.salon-menu ul li label, .spa-menu ul li label, .medispa-menu ul li label, .salon-menu ul li span, .spa-menu ul li span, .medispa-menu ul li span {
-		font-size: .8em;
-	}
+  .salon-menu ul li label, .spa-menu ul li label, .medispa-menu ul li label, .salon-menu ul li span, .spa-menu ul li span, .medispa-menu ul li span {
+    font-size: .8em;
+  }
 }
 
 .salon-menu ul li span, .spa-menu ul li span, .medispa-menu ul li span {
@@ -3232,7 +3241,7 @@ ABOUT
 
 .salon-menu {
   label, span {
-    background: #5edee9;
+    background: $main-color-blue;
   }
   .service-line {
     border-top: solid 1px #46abb5;
@@ -3252,16 +3261,16 @@ ABOUT
 
 .spa-menu {
   label, span {
-    background: #24e9b4;
+    background: $main-color-green;
   }
   p {
-	  margin-top: 30px;
+    margin-top: 30px;
   }
 }
 
 .medispa-menu {
   label, span {
-    background: #24e9b4;
+    background: $main-color-green;
   }
 }
 
@@ -3303,7 +3312,7 @@ ABOUT
 
 .spa-services-header {
   padding: 0 0 10% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/spa-header-bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3367,11 +3376,11 @@ ABOUT
 
 .salon-contact, .contact {
   padding: 4% 0 1% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
 }
 
 .salon-contact p, .contact p {
-  color: #fff;
+  color: $white;
 }
 
 .salon-contact .phone-number, .contact .phone-number {
@@ -3404,7 +3413,7 @@ ABOUT
     }
   }
   address {
-    color: #f01754;
+    color: $main-color-red;
     font-size: 2.2em;
     font-family: 'endurance_w01_lightregular';
     font-style: normal;
@@ -3414,9 +3423,9 @@ ABOUT
 }
 
 table {
-  background: #fff;
+  background: $white;
   width: 100%;
-  color: #5edee9;
+  color: $main-color-blue;
   text-align: center;
   border-collapse: collapse;
   td {
@@ -3447,31 +3456,31 @@ table {
 
 
 .contact {
-	padding-bottom: 4%;
-	p {
-		a {
-			color: #fff;
-			text-decoration: underline;
-		}
-	}
-	.contact-address {
-		background: #fff;
-		text-align: center;
-		padding-top: 15px;
-		p, h3 {
-			color: #5EDEE9;
-		}
-		h3 {
-			text-transform: uppercase;
-			font-size: 1.3em;
-			padding-bottom: 10px;
-		}
-		address {
-			font-style: normal;
-			padding-bottom: 10px;
-		}
-	}
-	
+  padding-bottom: 4%;
+  p {
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  .contact-address {
+    background: $white;
+    text-align: center;
+    padding-top: 15px;
+    p, h3 {
+      color: $main-color-blue;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.3em;
+      padding-bottom: 10px;
+    }
+    address {
+      font-style: normal;
+      padding-bottom: 10px;
+    }
+  }
+  
 }
 
 /** FEATURED SERVICES **/
@@ -3497,7 +3506,7 @@ table {
     z-index: 1;
   }
   p {
-	  padding-bottom: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -3514,7 +3523,7 @@ table {
 }
 
 .featured-details {
-  background: #fff;
+  background: $white;
   padding: 25px;
   strong {
     font-size: 1.1em;
@@ -3566,7 +3575,7 @@ table {
 }
 
 /***********************
-		 Misc 
+     Misc 
 /**********************/
 
 .misc-header {
@@ -3592,7 +3601,7 @@ table {
 }
 
 /***********************
-		 MyPA 
+     MyPA 
 /**********************/
 /** LOGIN **/
 
@@ -3640,18 +3649,18 @@ table {
 }
 
 .login .register-button:hover, .register .register-button:hover {
-  color: #fff;
-  background: #24e9b4;
+  color: $white;
+  background: $main-color-green;
 }
 
 .login .reg-btn-border, .register .reg-btn-border {
-  border: solid 1px #24e9b4;
+  border: solid 1px $main-color-green;
   padding: 4px;
 }
 
 .login .register-button, .register .register-button {
-  outline: solid 1px #24e9b4;
-  color: #20CFA0;
+  outline: solid 1px $main-color-green;
+  color: $main-color-green-dark;
   margin: 0;
 }
 
@@ -3663,7 +3672,7 @@ table {
 
 .login a, .register a {
   text-decoration: underline;
-  color: #4a4d57;
+  color: $gray;
   font-weight: 400;
 }
 
@@ -3702,7 +3711,7 @@ table {
     text-transform: uppercase;
   }
   a {
-    color: #4a4d57;
+    color: $gray;
     font-weight: 700;
     text-decoration: underline;
     text-transform: uppercase;
@@ -3748,17 +3757,17 @@ table {
   -o-background-size: cover;
   background-size: cover;
   .panel {
-    background: #fff;
+    background: $white;
     margin-top: 3%;
     a {
-      color: #4a4d57;
+      color: $gray;
       font-weight: 700;
       text-decoration: underline;
       text-transform: uppercase;
     }
   }
   a {
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     text-decoration: underline;
   }
@@ -3814,7 +3823,7 @@ table {
     width: 100%;
   }
   a {
-    color: #4a4d57;
+    color: $gray;
     font-weight: 700;
     text-decoration: underline;
     text-transform: uppercase;
@@ -3874,7 +3883,7 @@ table {
     width: 100%;
   }
   a {
-    color: #4a4d57;
+    color: $gray;
     font-weight: 700;
     text-decoration: underline;
     text-transform: uppercase;
@@ -3907,7 +3916,7 @@ table {
     width: 100%;
   }
   a {
-    color: #4a4d57;
+    color: $gray;
     font-weight: 700;
     text-decoration: underline;
     text-transform: uppercase;
@@ -3936,7 +3945,7 @@ table {
 .registration-success {
   background: #f8f8f7;
   padding: 2%;
-  border-left: 7px solid #24e9b4;
+  border-left: 7px solid $main-color-green;
   p {
     margin: 0;
     font-style: italic;
@@ -3947,97 +3956,97 @@ table {
 
 
 /***********************
-	LANDING PAGE
+  LANDING PAGE
 /**********************/
 
 
 .cos-lp-header {
   padding: 0 0 25% 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid $white;
   background: url(img/backgrounds/cos-lp-header.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  	.cos-lp-gradient {
-	  	padding-top: 2%;
-		background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
-		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-		background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-		background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );	 	
-  	}
+    .cos-lp-gradient {
+      padding-top: 2%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, transparent));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );    
+    }
 }
 .lp-start-date {
-	background: #f1f1f1;
-	margin: 15px 0;
-		p {
-			font-size: 1.4em;
-			line-height: 1.4;
-			font-weight: 600;
-			font-style: italic;
-			text-align: center;
-			padding: 10px 0;
-		}
+  background: #f1f1f1;
+  margin: 15px 0;
+    p {
+      font-size: 1.4em;
+      line-height: 1.4;
+      font-weight: 600;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 0;
+    }
 }
 .lp-details {
-	ul {
-		padding-left: 20px;
-		li {
-			font-weight: 300;
-			list-style: disc;
-			padding: 3px 0;
-		}
-	}
-	.blue-bg {
-		position: relative;
-		bottom: 100px;
-		padding: 20px;
-		.field-wrap {
-			margin-bottom: 0;
-		}
-		h2 {
-			font-size: 2em;
-		}
-	}
+  ul {
+    padding-left: 20px;
+    li {
+      font-weight: 300;
+      list-style: disc;
+      padding: 3px 0;
+    }
+  }
+  .blue-bg {
+    position: relative;
+    bottom: 100px;
+    padding: 20px;
+    .field-wrap {
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 2em;
+    }
+  }
 }
 .green-bg {
-	color: #fff;
-	margin-top: 20px;
-		ul {
-			padding-left: 20px;
-		}
-		li {
-			list-style: disc;
-			padding: 4px 0;
-		}
+  color: $white;
+  margin-top: 20px;
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      list-style: disc;
+      padding: 4px 0;
+    }
 }
 .green-bg-no-margin-top {
-	background: #24e9b4; 
-	margin-top: 0;
-	padding: 4% 0;
-		p {
-			color: #fff;
-		}
+  background: $main-color-green; 
+  margin-top: 0;
+  padding: 4% 0;
+    p {
+      color: $white;
+    }
 }
 .lp-partners {
-	background: #f1f1f1;
-	padding: 40px 0;
-	border-bottom: 5px solid #fff;
+  background: #f1f1f1;
+  padding: 40px 0;
+  border-bottom: 5px solid $white;
 }
 
 @media only screen and (max-width: 40.063em) {
-	.lp-details {
-		.blue-bg {
-			bottom: 0;
-			margin-bottom: 20px;
-		}
-	}
-	.lp-start-date {
-		p {
-			font-size: 1.2em;
-		}
-	}
+  .lp-details {
+    .blue-bg {
+      bottom: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .lp-start-date {
+    p {
+      font-size: 1.2em;
+    }
+  }
 }

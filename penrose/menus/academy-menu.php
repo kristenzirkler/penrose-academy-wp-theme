@@ -92,7 +92,7 @@
 								</div>																
 							</div>		
 						</li>
-						<li><a <?php if (is_page( array('request-information'))) {echo 'class="current"';} ?> href="/request-information">Request Info</a></li>
+						<li><a <?php if (is_page( array('request-information'))) {echo 'class="current"';} ?> href="/request-information">Apply Now</a></li>
 						<li><a href="/student-salon-and-spa">Salon &amp; Spa</a></li>			
 					</ul>	
 				</nav>	

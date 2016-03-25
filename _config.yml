@@ -1,0 +1,12 @@
+highlighter: rouge
+github: [Repository metadata]
+
+baseurl: "http://kristenzirkler.github.io/penrose-academy-wp-theme"
+production: true
+encoding: utf-8
+
+# Sass
+sass:
+  sass_dir: scss
+  style: :expanded
+  line_numbers: false
