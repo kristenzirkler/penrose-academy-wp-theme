@@ -45,20 +45,20 @@ Template Name: Esthetics Curriculum
 								</div>	
 						</div>	
 					</div><!--END ROW-->	
-				</div>	
+				</div>
 				<div class="large-4 medium-4 medium-pull-0 small-8 small-pull-2 columns">
 
 					<?php 
-		
+
 						$image = get_field('est_cur_zone_1_graph');
-						
+
 						if( !empty($image) ): ?>
 						
 							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					
+
 					<?php endif; ?>	
 
-				</div>	
+				</div>
 			</div><!--END ROW-->	
 		</div><!--END SINGLE ZONE-->	
 		
